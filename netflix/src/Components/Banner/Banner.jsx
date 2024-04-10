@@ -12,6 +12,9 @@ function Banner() {
       setstate(response.data.results[10])
     }
     )
+    .catch((error) => {
+      console.log(error ," error form tmdb api ")
+    })
 
     return () => {
 
